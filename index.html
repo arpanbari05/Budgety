@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgety</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon-font.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- top -->
+    <div class="top-container">
+        <div class="date-box">
+            Available budget in <span class="budget__title--month">%Month%</span>:
+        </div>
+
+        <div class="budget__value">+ 9,456</div>
+
+        <div class="type-box type-box__income clearfix">
+            <span class="type-box__name">Income</span>
+            <div class="right">
+                <span class="type-box__value budget__income--value
+                ">+ 10,893</span>
+            <span class="type-box__percentage budget__income--percentage" id="income__percentage">---</span>
+            </div>
+            
+        </div>
+
+        <div class="type-box type-box__expense clearfix">
+            <span class="type-box__name">Expense</span>
+
+            <div class="right">
+                <span class="type-box__value budget__expenses--value" id="total-exp">- 1,893</span>
+            <span class="type-box__percentage budget__expenses--percentage" id="expense__percentage">77%</span>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- bottom -->
+    <div class="bottom-container">
+        <div class="input-box">
+            <select name="" class="input__type add__type">
+                <option value="inc" id="inc" selected>+</option>
+                <option value="exp" id="exp">-</option>
+            </select>
+
+            <input type="text" class="input__description add__description" placeholder="Add description">
+
+            <input type="number" class="input__value add__value" placeholder="Value">
+
+            <button class="add__btn">
+                <i class="icon-arrows-circle-check"></i>
+            </button>
+        </div>
+
+        <div class="list-box container">
+            <div class="income__list">
+                <h2 class="income__list--title">Income</h2>
+                
+                <!-- <div class="list__item clearfix" id="inc-0">
+                    <span class="list__item--description item__description">Salary</span>
+                    <div class="list__item--box">
+                        <div class="list__item--subbox">
+                            <span class="list__item--value item__value">+ 4,500</span>
+                        </div>
+
+                        <button class="list__item--delete item__delete--btn"><i class="icon-arrows-circle-remove"></i></button>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="expense__list expenses__list">
+                <h2 class="expense__list--title">Expense</h2>
+
+                <!-- <div class="list__item clearfix" id="exp-0">
+                    <span class="list__item--description item__description">Salary</span>
+                    <div class="list__item--box">
+                        <div class="list__item--subbox">
+                            <span class="list__item--valueitem__value">- 4,500</span>
+                            <span class="list__item--percentage item__percentage">70%</span>
+
+                        </div>
+
+                        <button class="list__item--delete item__delete--btn">
+                            <i class="icon-arrows-circle-remove"></i>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
